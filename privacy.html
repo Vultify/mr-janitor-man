@@ -20,13 +20,14 @@
 
   <div class="card">
     <h2>Summary</h2>
-    <p>Mr Janitor Man collects only what it needs to moderate the Vultify Discord server and announce Vultify's new content. We don't sell, rent or share your data, and we don't use it for advertising.</p>
+    <p>Mr Janitor Man collects only what it needs to moderate the Vultify Discord server and announce Vultify's new content. We don't sell or rent your data, share it beyond the services needed to run the bot, or use it for advertising.</p>
 
     <h2>What the bot processes on Discord</h2>
     <ul>
-      <li><strong>Messages</strong> sent in the server are checked as they arrive for spam, invite links and banned words. Messages aren't stored by the bot. Deleted or edited messages, and messages removed for breaking rules, may be copied into a private moderator-only log channel inside the Discord server.</li>
+      <li><strong>Messages</strong> sent in the server are checked as they arrive for spam, invite links, links to websites that aren't on the server's approved list, and banned words. Messages aren't stored by the bot. Deleted or edited messages, messages removed for breaking rules, and messages blocked by Discord's own AutoMod may be copied into a private moderator-only log channel inside the Discord server.</li>
       <li><strong>Member events</strong> such as joins, leaves, role changes and account creation dates are used for raid protection and are logged in the same private channel.</li>
-      <li><strong>Moderation records</strong> (strikes and warnings) store your Discord user ID, the reason, and the date. Strikes expire and are deleted automatically after 30 days, or sooner if a moderator clears them.</li>
+      <li><strong>Moderation records</strong> (strikes and warnings) store your Discord user ID, the reason, and the date. Strikes expire after 30 days and are permanently deleted by an automatic daily cleanup, or sooner if a moderator clears them.</li>
+      <li><strong>Role choices</strong> you make with the role buttons are applied as normal Discord roles. The bot doesn't keep its own record of them.</li>
       <li><strong>Server settings</strong> (channel and role choices) are stored so the bot remembers its configuration.</li>
     </ul>
 
@@ -36,13 +37,14 @@
       <li>the connected account's display name, and</li>
       <li>the list of that account's public videos (ID, title/description, link, cover image and post time).</li>
     </ul>
-    <p>This is used only to post "new TikTok" announcements in the Discord server. The bot doesn't access any other TikTok users' data, never posts to TikTok, and keeps the sign-in tokens only on the computer that runs the bot. The creator can revoke access at any time in TikTok's settings under <em>Security and permissions → Manage app permissions</em>.</p>
+    <p>This is used only to post "new TikTok" announcements in the Discord server. The bot doesn't access any other TikTok users' data and never posts to TikTok. The sign-in tokens are kept only in the bot's private storage at its hosting provider (see below) and are never shared or published. The creator can revoke access at any time in TikTok's settings under <em>Security and permissions → Manage app permissions</em>.</p>
 
     <h2>YouTube and Twitch</h2>
     <p>The bot reads Vultify's own public YouTube feed and public Twitch live status to announce new videos and streams. No viewer data is collected from these platforms.</p>
 
     <h2>Where data is stored</h2>
-    <p>All bot data is stored in files on the private computer or server that runs the bot, plus the moderator-only log channel inside the Discord server. It isn't sent to any other third party.</p>
+    <p>The bot runs on <a href="https://railway.com">Railway</a>, a cloud hosting provider. The bot's saved data (server settings, strikes, and the TikTok sign-in) is stored in private storage on Railway's servers, which only Vultify can access. Railway hosts this data on our behalf and doesn't use it for its own purposes. Log entries are kept in the moderator-only log channel inside the Discord server, which is stored by Discord.</p>
+    <p>Apart from these services that are needed to run the bot (Discord and Railway), your data isn't sent to or shared with anyone else.</p>
 
     <h2>Your choices</h2>
     <ul>
